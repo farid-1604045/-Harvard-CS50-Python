@@ -1,5 +1,9 @@
-# Ask user for their name and greet them
-name = input("What's your name? ")
-print(f"Hello, {name}! Nice to meet you!")
-print("Hello, ", end="")
-print(name)
+def main():
+    name = input("What is your name? ")
+    print(hello(name))
+
+def hello(to="world"):
+    return f"hello, {to}"
+
+if __name__ == "__main__":
+    main()
